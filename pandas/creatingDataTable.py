@@ -25,3 +25,9 @@ df2 = pd.DataFrame(
     columns=["S.no.", "name", "status", "total percentile"],
 )
 print(df2.to_string(index=False))
+print(df2.name)
+a=input('name')
+NA=df2[df2('name'==a)]
+print(NA)
+#stats=NA['status'][0]
+#print(a,'is',stats) 
