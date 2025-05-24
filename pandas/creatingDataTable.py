@@ -1,19 +1,19 @@
 import pandas as pd
 
-df = pd.read_csv(
-    r"C:\Users\dell\OneDrive\Documents\GitHub\python\pandas\insurance_claims.csv"
-)
-"""define  a new table by 
+"""METHOD-1 define  a new table by 
 .Dataframe({'COLUMN KA NAAM':[CONTENT AS A LIST]})
 just like dictionary"""
 
 df1 = pd.DataFrame(
     {"name": ["acca", "bacca", "cacca", "dacca"], "age": [10, 20, 30, 40]}
 )
+#column wise entery
 # .to_sring(index=False) se extra column nahi aata hai
 print(df1.to_string(index=False))
-"""data entery by list method
+"""METHOD-2 FOR CREATING TABLES
+data entery by list method
        pd.dataframes([lists],columns=[])"""
+#rows wise entery
 df2 = pd.DataFrame(
     [
         [1, "mehul", "pass", 98],
@@ -26,8 +26,10 @@ df2 = pd.DataFrame(
 )
 print(df2.to_string(index=False))
 print(df2.name)
-a=input('name')
-NA=df2[df2('name'==a)]
-print(NA)
-#stats=NA['status'][0]
-#print(a,'is',stats) 
+"""METHOD-3 FOR CREATING TABLES
+.series se column wise data feed hota hai"""
+
+animal = ["cat", "dog", "parrot", "fish", "lepord"]
+quantity = [10, 25, 12, 45, 1]
+df3 = pd.Series(quantity, index=animal, name="pet shop")
+print(df3)
