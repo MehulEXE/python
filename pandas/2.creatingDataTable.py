@@ -33,3 +33,4 @@ animal = ["cat", "dog", "parrot", "fish", "lepord"]
 quantity = [10, 25, 12, 45, 1]
 df3 = pd.Series(quantity, index=animal, name="pet shop")
 print(df3)
+print(df3.keys())
