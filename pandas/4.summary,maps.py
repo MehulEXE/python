@@ -17,3 +17,17 @@ print(df.property_claim.mean())
 print(df.insured_relationship.value_counts())
 
 # maps
+'''2 type of function
+1.map(lambda kis ki jhagha: kya)
+
+2.apply(kya,axis='column /index')
+isko use karne ke liye phale def fun bao
+def som(row):row.change=row. '''
+print(df)
+ext=df.auto_year.map(lambda auto: auto-2000)
+print(ext)
+def year(row):
+    row.auto_year=row.auto_year -2000
+    return row
+ext2=df.apply(year, axis='columns')
+print(ext2)
