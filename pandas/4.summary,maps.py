@@ -1,8 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv(
-    r"C:\Users\dell\OneDrive\Documents\GitHub\python\pandas\insurance_claims.csv"
-)
+df = pd.read_csv(r"C:\Users\dell\OneDrive\Documents\GitHub\python\pandas\insurance_claims.csv")
 """summary have main four function
 1.describe()
 2.mean()
