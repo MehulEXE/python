@@ -24,6 +24,8 @@ df2 = pd.DataFrame(
     ],
     columns=["S.no.", "name", "status", "total percentile"],
 )
+df2['relation-ship']= None #add as column
+df2.insert(4,'type', 'any')
 print(df2.to_string(index=False))
 print(df2.name)
 """METHOD-3 FOR CREATING TABLES
@@ -32,5 +34,6 @@ print(df2.name)
 animal = ["cat", "dog", "parrot", "fish", "lepord"]
 quantity = [10, 25, 12, 45, 1]
 df3 = pd.Series(quantity, index=animal, name="pet shop")
+df3['braede']=None #add as a next row
 print(df3)
 print(df3.keys())
