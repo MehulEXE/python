@@ -18,6 +18,21 @@ sot1=str.sort_values(by='min amount')
 print(sot1)
 sot2=df.sort_values(by=['auto_make','vehicle_claim'])
 print(sot2)
-''' data type and replace'''
+''' data type and replace
+isnull() and fillna() ye do operater hai'''
 show=df.auto_make.dtypes
 print(show)
+plo=df._c39.fillna('unknown').value_counts().sort_values(ascending=False)
+# df.name.replace('kis ki ghjha','kya')
+#value_counts wala fun sirf single column hi outout deta hai
+print(plo)
+'''rename and combining'''
+
+'''df.rename(columns={dict})'''
+'''df.rename_axis('name',axis='column/index')'''
+
+#combining have 2 command
+'''
+1> pd.concat([name1, name2])
+2> name1.set_index('same thinge').join(name2.set_index('same thingee'))
+'''
