@@ -36,3 +36,4 @@ print(plo)
 1> pd.concat([name1, name2])
 2> name1.set_index('same thinge').join(name2.set_index('same thingee'))
 '''
+#============================
